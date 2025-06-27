@@ -1,0 +1,299 @@
+#colors {
+    color: #FFFEFE;
+    color: #F3F4F6;
+    color: #394150;
+    color: #000000;
+    color: #263FA9;
+    color: #86E7D4;
+    color: #9DC4F8;
+    color: #C1B6F8;
+    color: #EDACD2;
+    color: #F8D8B0;
+}
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+}
+
+
+.author-info a {
+    text-decoration: none;
+}
+
+.Heading {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.Label {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.Text {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#ot {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #263FA9;
+}
+
+
+#Liam {
+    width: 284px;
+    height: 288px;
+    padding: auto; 
+    background-color: #C1B6F8;
+    background-image: 
+    url(./resources/Gradient@2x.png),
+    url(./resources/person_1@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    display: flex;
+    align-items: flex-end;
+    order: 1;
+}
+
+#Sophia {
+    width: 284px;
+    height: 288px;
+    padding: auto; 
+    background-color: #EDACD2;
+    background-image: 
+    url(./resources/Gradient@2x.png),
+    url(./resources/person_2@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    display: flex;
+    align-items: flex-end;
+    order: 2;
+}
+
+#Ethan {
+    width: 284px;
+    height: 288px;
+    padding: auto; 
+    background-color: #9DC4F8;
+    background-image: 
+    url(./resources/Gradient@2x.png),
+    url(./resources/person_3@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    display: flex;
+    align-items: flex-end;
+    order: 3;
+}
+
+#Isabella {
+    width: 284px;
+    height: 288px;
+    padding: auto; 
+    background-color: #F8D8B0;
+    background-image: 
+    url(./resources/Gradient@2x.png),
+    url(./resources/person_4@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    display: flex;
+    align-items: flex-end;
+    order: 4;
+}
+
+#Noah {
+    width: 284px;
+    height: 288px;
+    padding: auto; 
+    background-color: #86E7D4;
+    background-image: 
+    url(./resources/Gradient@2x.png),
+    url(./resources/person_5@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    display: flex;
+    align-items: flex-end;
+    order: 5;
+}
+
+#Seeall {
+    width: 284px;
+    height: 288px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    order: 2;
+}
+
+#hover1:hover {
+    cursor: pointer;
+}
+#hover2:hover {
+    cursor: pointer;
+}
+
+#post-body {
+    padding-top: 2rem;
+    display: grid;
+    justify-items: center;
+    min-height: 100vh;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(55, 65, 81);
+    align-self: end;
+    margin: 2rem;
+}
+
+#background {
+    width: 1136px;
+    align-self: end;
+    background-color: #F3F4F6;
+    background-image: url(./resources/Background_decor.svg);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+}
+
+.name {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFEFE;
+}
+
+.job {    
+    font-family: "Outfit";
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #FFFEFE;
+}
+
+.person-txt {
+    margin: 1.5rem;
+}
+
+#meet-textbox {
+    padding: 2rem;
+    padding-right: 3.25rem;
+    grid-column: 1/3;
+    order: 0;
+}
+
+/* 4 columns */
+@media (min-width: 1256px){
+    
+    #Noah {
+        border-bottom-right-radius: 1rem;
+    }
+
+    #Sophia {
+        border-top-right-radius: 1rem;
+    }
+}
+
+/* 3 columns */
+@media (max-width: 1257px) and (min-width: 972px){
+    
+    #background {
+        width: 852px;
+    }
+
+    #meet-textbox {
+        grid-column: 1 / 4;
+        padding-right: 21rem;
+    }
+
+    #Seeall {
+        order: 3;
+    }
+
+    #Noah {
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+/* 2 columns */
+@media (max-width: 971px) and (min-width: 689px){
+    
+    #background {
+        width: 568px;
+    }
+
+    #meet-textbox {
+        grid-column: 1 / 3;
+    }
+
+    #Seeall {
+        order: 4
+    }
+
+    #Noah {
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+/* 1 column */
+@media (max-width: 688px) {
+    .Heading {
+        font-size: 1.710rem;
+        margin: 0.3rem 0;
+    }
+    .Text {
+        font-size: .7rem;
+    }
+
+    #ot {
+        font-size: .7rem;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    #background {
+        width: 284px;
+        margin: 1rem;
+    }
+
+    #meet-textbox {
+        min-height: 200px;
+        padding: 1.5rem;
+        grid-column: 1 / 2;
+    }
+
+    #Seeall {
+        order: 5;
+    }
+}
