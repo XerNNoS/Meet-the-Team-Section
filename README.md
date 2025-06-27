@@ -10,7 +10,7 @@
       Challenge
     </a>
     <span> | </span>
-    <a href="https://xernnos.github.io/Coin-flip/">
+    <a href="https://xernnos.github.io/Meet-the-Team-Section/">
       Solution
     </a>
   </h3>
